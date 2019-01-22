@@ -1,32 +1,117 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Anton|Karla');
+
+:root {
+  --orange: #f4ad42;
+  --dark: #2d2d2d;
+}
+
+.partBack canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease
+}
+
+.partBack {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0
+}
+
+* {
   text-align: center;
+  color: var(--orange);
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body {
+  background: rgb(107,107,107);
+  background: linear-gradient(338deg, rgba(107,107,107,1) 0%, rgba(103,103,103,1) 49%, rgba(65,65,65,1) 100%); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  /* font-family: 'Anton', sans-serif; */
+  font-size: 2.7rem;
+  /* -webkit-text-stroke-color: var(--dark);
+  -webkit-text-stroke-width: 0.1px; */
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+.propic {
+  border-style: solid;
+  border-color: var(--orange);
+  border: 10px;
+  margin: 1rem;
+  
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 250px 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  opacity: 0.9;
+  background-color: var(--dark);
+  width: 57%;
+  border-radius: 15px;
+  
+  
+}
+.skillCards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem;
+  margin: 2rem auto;
+  background-color: var(--dark);
+  opacity: 0.9;
+  width: 85%;
+  border-radius: 17px;
+}
+
+.projCards {
+  display: grid;
+  grid-template-columns: 300px 300px 300px ;
+  grid-gap: 3rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  opacity: 0.9;
+  width: 65%;
+  border-radius: 17px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.socialCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem;
+  margin: 2rem auto;
+  background-color: var(--dark);
+  opacity: 0.9;
+  width: 95%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+}
+
+a :hover{
+  color: antiquewhite;
 }
