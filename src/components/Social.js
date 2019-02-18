@@ -4,7 +4,7 @@ export class Social extends Component {
   render() {
     return (
       <div>
-        <h1>More Info</h1>
+        <h2>More Info</h2>
 
         <div className ="socialCard">            
             <a href="https://resume.creddle.io/resume/a7cpkfe97sv" target="_blank"><h2>Resume</h2></a>
