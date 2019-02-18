@@ -56,10 +56,10 @@ h2 {
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 250px 800px;
+  /* display: grid;
+  grid-template-columns: 250px 800px; */
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 3rem;
   opacity: 0.9;
   background-color: var(--dark);
   width: 57%;
@@ -91,7 +91,7 @@ h2 {
   padding-top: 2rem;
   padding-bottom: 3rem;
   opacity: 0.9;
-  width: 65%;
+  width: 75%;
   border-radius: 17px;
   
 }
@@ -114,4 +114,9 @@ a {
 
 a :hover{
   color: antiquewhite;
+}
+
+footer {
+  background-color: var(--dark);
+  opacity: 0.9;
 }

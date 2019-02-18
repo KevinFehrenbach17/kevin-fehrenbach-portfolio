@@ -27,6 +27,8 @@ export class About extends Component {
 }
 
 const proPic ={
+    marginTop: '0 auto',
+    marginBottom: '0 auto',
     borderRadius: '50%',
     float: 'left',
     borderStyle: 'solid',
